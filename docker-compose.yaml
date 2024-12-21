@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+      platform: linux/arm64
     image: 'dimaskiddo/go-whatsapp-multidevice-rest:latest'
     env_file:
       - ./.env
