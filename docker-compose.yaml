@@ -2,7 +2,6 @@ services:
   go-whatsapp-multidevice-rest:
     build:
       context: .
-      platform: linux/arm64
       dockerfile: ./Dockerfile      
     image: 'dimaskiddo/go-whatsapp-multidevice-rest:latest'
     env_file:
