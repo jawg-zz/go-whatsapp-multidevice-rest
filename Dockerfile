@@ -1,6 +1,6 @@
 # Builder Image
 # ---------------------------------------------------
-FROM golang:1.24rc1-bullseye AS go-builder
+FROM --platform=linux/arm64 golang:1.24rc1-bullseye AS go-builder
 
 WORKDIR /usr/src/app
 
